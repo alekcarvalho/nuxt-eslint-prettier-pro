@@ -29,6 +29,6 @@
     "husky": "^7.0.0"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint"
+    "*.{js,vue}": "eslint --fix"
   }
 }
