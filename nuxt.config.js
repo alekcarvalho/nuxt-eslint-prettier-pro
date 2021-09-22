@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'app',
+    titleTemplate: '%s | Nuxt Eslint Prettier Pro',
     htmlAttrs: {
       lang: 'en',
     },
@@ -16,6 +16,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
@@ -39,7 +40,9 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    publicPath: '/assets/',
+  },
 
   server: {
     host: '0.0.0.0',
